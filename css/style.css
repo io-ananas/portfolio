@@ -526,6 +526,27 @@ a {
   border-bottom: 1px solid #e8e8e8;
 }
 
+.about-snapshot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.about-snapshot-grid h2 {
+  margin-bottom: 24px;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.about-snapshot-grid .career-entry {
+  padding: 20px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.about-snapshot-grid .career-entry:last-child {
+  border-bottom: none;
+}
+
 /* Career Timeline */
 .career-timeline {
   display: flex;
@@ -841,6 +862,11 @@ a {
   .project-info-four-bordered {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .about-snapshot-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .project-grid-four {
