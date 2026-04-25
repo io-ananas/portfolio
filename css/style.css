@@ -351,7 +351,13 @@ a {
   margin-bottom: 5px;
 }
 
-.project-info p, .project-info-four p, .project-info-aside p, .project-info-three p, .project-info-four-bordered p {
+.project-info-four-bordered p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.project-info p, .project-info-four p, .project-info-aside p, .project-info-three p {
   font-size: 1rem;
   line-height: 1.65;
   color: #444;
@@ -460,9 +466,10 @@ a {
 .project-grid-four p {
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #555;
+  color: #444;
   padding: 0 20px 20px 20px;
 }
+
 
 /* --- About Page --- */
 .about-page {
