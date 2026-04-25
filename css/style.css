@@ -19,7 +19,7 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #1a1a1a;
-  background-color: #ffffff;
+  background-color: #F9F9F9;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -47,7 +47,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 24px;
+  padding: 28px 0px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -201,6 +201,7 @@ a {
   font-size: 2.4rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+  line-height: 1.2;
   margin-bottom: 32px;
 }
 
@@ -211,16 +212,74 @@ a {
   margin-bottom: 60px;
 }
 
-.project-info h2 {
+.project-info-four {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.project-info-aside {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.project-info-three {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 70px;
+}
+
+.project-info-four-bordered {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.project-info-four-bordered > div {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.project-info h2, .project-info-four h2, .project-info-aside h2, .project-info-three h2, .project-info-four-bordered h2 {
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #999;
+  color: #404040;
   margin-bottom: 12px;
 }
 
-.project-info p {
+.project-info-three h3, .project-info-four-bordered h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #404040;
+  margin-bottom: 12px;
+}
+
+.project-info-three ul, .project-info-four-bordered ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.project-info-three li, .project-info-four-bordered li {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.project-info p, .project-info-four p, .project-info-aside p, .project-info-three p, .project-info-four-bordered p {
   font-size: 1rem;
   line-height: 1.65;
   color: #444;
@@ -261,6 +320,52 @@ a {
 .project-gallery .gallery-grid .gallery-image svg {
   width: 100%;
   height: 100%;
+}
+
+.header-image {
+  margin-bottom: 70px;
+}
+
+.project-grid-four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.project-grid-four div {
+  text-align: left;
+  background-color: #fff;
+  /* border: 1px solid #e8e8e8; */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project-grid-four img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.project-grid-four h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #333;
+  padding: 0 20px;
+}
+
+.project-grid-four h3:first-of-type {
+  padding-top: 16px;
+}
+
+.project-grid-four p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  padding: 0 20px 20px 20px;
 }
 
 /* --- About Page --- */
@@ -595,6 +700,30 @@ a {
   .project-info {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .project-info-four {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .project-info-aside {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .project-info-three {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .project-info-four-bordered {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-grid-four {
+    grid-template-columns: 1fr;
   }
 
   /* Mobile nav */
