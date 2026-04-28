@@ -897,6 +897,10 @@ a {
     max-width: 100%;
     padding: 28px max(20px, 4vw);
   }
+
+  .hero {
+  padding: 80px max(20px, 4vw);
+  }
 }
 
 @media (max-width: 768px) {
