@@ -71,7 +71,24 @@ a {
 .site-nav .nav-links a {
   font-size: 0.9rem;
   font-weight: 400;
+  position: relative;
   transition: opacity 0.2s ease;
+}
+
+.site-nav .nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+  transition: width 0.25s ease;
+}
+
+.site-nav .nav-links a:hover::after {
+  width: 100%;
 }
 
 .site-nav .nav-links a:hover {
