@@ -95,6 +95,26 @@ a {
   opacity: 0.55;
 }
 
+/* Project-Nav Underline Animation */
+.project-nav a {
+position: relative;
+}
+
+.project-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.25s ease;
+}
+
+.project-nav a:hover::after {
+  width: 100%;
+}
+
 /* Hamburger (mobile) */
 .nav-toggle {
   display: none;
