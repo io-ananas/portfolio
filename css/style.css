@@ -143,8 +143,10 @@ a {
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
+.project-card:hover img{
+  /* transform: translateY(-4px); */
+  transform: scale(1.02);
+  transition: all 0.2s ease;
 }
 
 .project-card .thumbnail {
