@@ -177,12 +177,17 @@ position: relative;
 
 .project-card {
   display: block;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
+}
+
+.project-card img{
+  /* transform: scale(1); */
+  transition: all 0.2s ease;
 }
 
 .project-card:hover img{
   /* transform: translateY(-4px); */
-  transform: scale(1.02);
+  transform: scale(1.05);
   transition: all 0.2s ease;
 }
 
@@ -212,6 +217,29 @@ position: relative;
   margin-top: 16px;
   font-size: 1.1rem;
   font-weight: 600;
+  position: relative;
+  padding-right: 34px;
+}
+
+.project-card h3::after {
+  content: '→';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateX(-10px) translateY(-50%);
+  opacity: 0;
+  padding: 5px 8px;
+  color: #000;
+  border-radius: 999px;
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.project-card:hover h3::after {
+  opacity: 1;
+  transform: translateX(0) translateY(-50%);
 }
 
 .project-card p {
