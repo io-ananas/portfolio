@@ -599,7 +599,7 @@ position: relative;
 
 .career-entry {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 0.3fr 1fr;
   gap: 24px;
   padding: 20px 0;
   border-bottom: 1px solid #f0f0f0;
