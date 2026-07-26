@@ -296,6 +296,11 @@ position: relative;
   color: #1a1a1a;
 }
 
+.feature {
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
 .project-detail h1 {
   font-size: 2.4rem;
   font-weight: 600;
@@ -487,6 +492,17 @@ position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
   background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.square-video {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #E2E6FD;
   display: flex;
   align-items: center;
   justify-content: center;
