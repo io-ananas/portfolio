@@ -40,4 +40,32 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fallback: show everything immediately
     fadeTargets.forEach((el) => el.classList.add("visible"));
   }
+
+  // --- Back to top button ---
+  (function () {
+    const SCROLL_THRESHOLD = 200; // px
+
+    const backToTop = document.createElement("button");
+    backToTop.className = "back-to-top";
+    backToTop.type = "button";
+    backToTop.setAttribute("aria-label", "Back to top");
+    backToTop.textContent = "back to top";
+    document.body.appendChild(backToTop);
+
+    const toggleBackToTop = () => {
+      if (window.scrollY > SCROLL_THRESHOLD) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    };
+
+    window.addEventListener("scroll", toggleBackToTop, { passive: true });
+    // initial check
+    toggleBackToTop();
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  })();
 });

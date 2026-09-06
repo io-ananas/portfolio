@@ -998,6 +998,40 @@ position: relative;
 .gallery-image.fade-in:nth-child(2) { transition-delay: 0.15s; }
 .gallery-image.fade-in:nth-child(3) { transition-delay: 0.3s; }
 
+/* --- Back to top button --- */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #F9F9F9;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  z-index: 1100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .back-to-top:hover {
+    background: #f5f5f5;
+    opacity: 0.55;
+  }
+}
+
 /* --- Responsive --- */
 @media (max-width: 1170px) {
   .container {
