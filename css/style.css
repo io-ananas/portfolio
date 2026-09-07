@@ -301,6 +301,23 @@ position: relative;
   margin-top: 100px;
 }
 
+.feature h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 36px;
+}
+
+.feature-meta {
+  font-size: 0.8rem;
+  line-height: 1.65;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 14px;
+}
+
 .project-detail h1 {
   font-size: 2.4rem;
   font-weight: 600;
