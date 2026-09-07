@@ -348,7 +348,7 @@ position: relative;
   margin-bottom: 60px;
 }
 
-.project-info-three {
+.project-info-three, .project-info-three-feature {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
   gap: 40px;
@@ -409,7 +409,7 @@ position: relative;
   padding: 20px;
 }
 
-.project-info h2, .project-info-four h2, .project-info-aside h2, .project-info-three h2, .project-info-four-bordered h2 {
+.project-info h2, .project-info-four h2, .project-info-aside h2, .project-info-three h2, .project-info-four-bordered h2, .project-info-three-feature h2 {
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -418,20 +418,45 @@ position: relative;
   margin-bottom: 12px;
 }
 
-.project-info-three h3, .project-info-four-bordered h3 {
+.project-info-aside h3{
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #404040;
+  margin-bottom: 12px;
+}
+
+.project-info-three h3, .project-info-four-bordered h3{
   font-size: 1rem;
   font-weight: 600;
   color: #404040;
   margin-bottom: 12px;
 }
 
-.project-info-three ul, .project-info-four-bordered ul {
+.project-info-three-feature h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #404040;
+  margin-bottom: 12px;
+}
+
+.project-info-three-feature h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #404040;
+  margin-bottom: 12px;
+}
+
+.project-info-three ul, .project-info-four-bordered ul, .project-info-three-feature ul {
   margin: 0;
   padding-left: 20px;
   list-style: disc;
 }
 
-.project-info-three li{
+.project-info-three li, .project-info-three-feature li {
   font-size: 1rem;
   line-height: 1.65;
   color: #444;
@@ -451,7 +476,7 @@ position: relative;
   color: #444;
 }
 
-.project-info p, .project-info-four p, .project-info-aside p, .project-info-three p {
+.project-info p, .project-info-four p, .project-info-aside p, .project-info-three p, .project-info-three-feature p {
   font-size: 1rem;
   line-height: 1.65;
   margin-bottom: 14px;
@@ -1109,7 +1134,7 @@ position: relative;
     gap: 28px;
   }
 
-  .project-info-three {
+  .project-info-three, .project-info-three-feature {
     grid-template-columns: 1fr;
     gap: 28px;
   }
