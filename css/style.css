@@ -437,6 +437,7 @@ position: relative;
 .project-info p, .project-info-four p, .project-info-aside p, .project-info-three p {
   font-size: 1rem;
   line-height: 1.65;
+  margin-bottom: 14px;
   color: #444;
 }
 
